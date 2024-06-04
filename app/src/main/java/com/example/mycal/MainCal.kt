@@ -2,11 +2,14 @@ package com.example.mycal
 
 fun main() {
     var cal = Calculator()
-    cal.addNum(1,2)
+    cal.addNum()
 }
 
 class Calculator {
-    fun addNum(num1: Int, num2: Int){
-        println("결과: ${num1+num2}")
+    fun addNum(){
+        var num1 = readln().toInt()
+        var num2 = readln().toInt()
+        var sum = num1 + num2
+        println("결과: $sum")
     }
 }
