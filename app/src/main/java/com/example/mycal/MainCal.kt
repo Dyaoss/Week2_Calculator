@@ -25,8 +25,12 @@ class Calculator {
         println("종료하려면 -1을 입력하세요.")
         op = readln().toInt()
 
+        when(op){
+            -1 -> println("계산기를 종료합니다.")
+            else -> operator(op, num1, num2)
+        }
 
-        operator(op, num1, num2)
+
 
     }
 
@@ -45,21 +49,26 @@ class Calculator {
 
     fun addNum(_num1: Double, _num2: Double) {
         println("$_num1 + $_num2 = ${_num1 + _num2}")
+        main()
     }
 
     fun subNum(_num1: Double, _num2: Double) {
         println("$_num1 - $_num2 = ${_num1 - _num2}")
+        main()
     }
 
     fun mulNum(_num1: Double, _num2: Double) {
         println("$_num1 x $_num2 = ${_num1 * _num2}")
+        main()
     }
 
     fun divNum(_num1: Double, _num2: Double) {
         println("$_num1 / $_num2 = ${_num1 / _num2}")
+        main()
     }
 
     fun remNum(_num1: Double, _num2: Double) {
         println("$_num1 % $_num2 = ${_num1 % _num2}")
+        main()
     }
 }
