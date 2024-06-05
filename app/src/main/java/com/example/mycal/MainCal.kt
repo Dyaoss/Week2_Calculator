@@ -16,13 +16,16 @@ class Calculator {
     fun calculator() {
         var op: Int? = 0
         println("첫번째 숫자를 입력해주세요.")
+        print("-> ")
         var num1 = readln().toDouble() //나눗셈을 위해 더블형으로 받음
 
         println("두번째 숫자를 입력해주세요.")
+        print("-> ")
         var num2 = readln().toDouble()
 
         println("연산자를 입력해주세요.(1 -> 더하기, 2 -> 빼기, 3 -> 곱하기, 4 -> 나누기, 5 -> 나머지)")
         println("종료하려면 -1을 입력하세요.")
+        print("-> ")
         op = readln().toInt()
 
         when(op){
@@ -49,26 +52,31 @@ class Calculator {
 
     fun addNum(_num1: Double, _num2: Double) {
         println("$_num1 + $_num2 = ${_num1 + _num2}")
+        println("-------------------------")
         main()
     }
 
     fun subNum(_num1: Double, _num2: Double) {
         println("$_num1 - $_num2 = ${_num1 - _num2}")
+        println("-------------------------")
         main()
     }
 
     fun mulNum(_num1: Double, _num2: Double) {
         println("$_num1 x $_num2 = ${_num1 * _num2}")
+        println("-------------------------")
         main()
     }
 
     fun divNum(_num1: Double, _num2: Double) {
         println("$_num1 / $_num2 = ${_num1 / _num2}")
+        println("-------------------------")
         main()
     }
 
     fun remNum(_num1: Double, _num2: Double) {
         println("$_num1 % $_num2 = ${_num1 % _num2}")
+        println("-------------------------")
         main()
     }
 }
