@@ -25,10 +25,10 @@ class Calculator {
             println("두번째 숫자를 입력해주세요. / 종료하려면 -1을 입력하세요.")
             print("-> ")
             var num2 = readln().toDouble()
+
             if (num2.toInt() == -1) {
                 println("계산기를 종료합니다.")
             } else {
-
                 println("연산자를 입력해주세요.(1 -> 더하기, 2 -> 빼기, 3 -> 곱하기, 4 -> 나누기, 5 -> 나머지)")
                 println("종료하려면 -1을 입력하세요.")
                 print("-> ")
@@ -62,7 +62,6 @@ class Calculator {
         if (conNum2.toInt() == -1) {
             println("계산기를 종료합니다.")
         } else {
-
             println("연산자를 입력해주세요.(1 -> 더하기, 2 -> 빼기, 3 -> 곱하기, 4 -> 나누기, 5 -> 나머지)")
             println("종료하려면 -1을 입력하세요.")
             print("-> ")
@@ -107,6 +106,7 @@ class Calculator {
 
     fun divNum(_num1: Double, _num2: Double) {
         var temp = 0.0
+
         println("$_num1 / $_num2 = ${_num1 / _num2}")
         println("-------------------------")
         temp = _num1 / _num2
@@ -116,6 +116,7 @@ class Calculator {
 
     fun remNum(_num1: Double, _num2: Double) {
         var temp = 0.0
+
         println("$_num1 % $_num2 = ${_num1 % _num2}")
         println("-------------------------")
         temp = _num1 % _num2
