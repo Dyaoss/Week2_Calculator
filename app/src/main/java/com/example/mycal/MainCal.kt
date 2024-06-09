@@ -54,7 +54,7 @@ class Calculator {
         }
     }
 
-    fun countinueOp(_temp: Double) {
+    fun continueOp(_temp: Double) {
         println("현재값 : ${_temp}")
         println("계속 연산할 다음 숫자를 입력해주세요. / 종료하려면 -1을 입력하세요.")
         print("-> ")
@@ -78,49 +78,49 @@ class Calculator {
         var temp = 0.0
 
         println("$_num1 + $_num2 = ${_num1 + _num2}")
-        println("-------------------------")
+        println("------------------------------------------")
         temp = _num1 + _num2
 
-        countinueOp(temp)
+        continueOp(temp)
     }
 
     fun subNum(_num1: Double, _num2: Double) {
         var temp = 0.0
 
         println("$_num1 - $_num2 = ${_num1 - _num2}")
-        println("-------------------------")
+        println("------------------------------------------")
         temp = _num1 - _num2
 
-        countinueOp(temp)
+        continueOp(temp)
     }
 
     fun mulNum(_num1: Double, _num2: Double) {
         var temp = 0.0
 
         println("$_num1 x $_num2 = ${_num1 * _num2}")
-        println("-------------------------")
+        println("------------------------------------------")
         temp = _num1 * _num2
 
-        countinueOp(temp)
+        continueOp(temp)
     }
 
     fun divNum(_num1: Double, _num2: Double) {
         var temp = 0.0
 
         println("$_num1 / $_num2 = ${_num1 / _num2}")
-        println("-------------------------")
+        println("------------------------------------------")
         temp = _num1 / _num2
 
-        countinueOp(temp)
+        continueOp(temp)
     }
 
     fun remNum(_num1: Double, _num2: Double) {
         var temp = 0.0
 
         println("$_num1 % $_num2 = ${_num1 % _num2}")
-        println("-------------------------")
+        println("------------------------------------------")
         temp = _num1 % _num2
 
-        countinueOp(temp)
+        continueOp(temp)
     }
 }
